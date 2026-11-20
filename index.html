@@ -243,12 +243,27 @@
   .featured { border-top: 1px solid rgba(201, 169, 110, 0.25); }
   .featured-panel {
     height: 420px;
-    background: linear-gradient(160deg, #3E2A1C 0%, #6B4A2F 45%, #C9A96E 100%);
+    background: var(--brown);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
+  }
+  .featured-panel img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+  .featured-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(46, 27, 18, 0.6), rgba(46, 27, 18, 0.2));
+    z-index: 1;
   }
   .featured-panel::after {
     content: "";
@@ -264,7 +279,7 @@
     color: #FAF7F2;
     padding: 0 32px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     line-height: 1.4;
   }
   .featured h2 {
@@ -292,11 +307,27 @@
   .portfolio-item { margin-top: 84px; }
   .portfolio-panel {
     height: 380px;
+    background: var(--brown);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
+  }
+  .portfolio-panel img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+  }
+  .portfolio-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(46, 27, 18, 0.55), rgba(46, 27, 18, 0.15));
+    z-index: 1;
   }
   .portfolio-panel::after {
     content: "";
@@ -311,14 +342,10 @@
     font-size: clamp(28px, 5vw, 38px);
     color: #FAF7F2;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     padding: 0 28px;
     line-height: 1.4;
   }
-  .panel-1 { background: linear-gradient(150deg, #2E1B12 0%, #5C3A22 55%, #A97C50 100%); }
-  .panel-2 { background: linear-gradient(150deg, #4A3226 0%, #8A6A45 55%, #C9A96E 100%); }
-  .panel-3 { background: linear-gradient(150deg, #1F130C 0%, #6B4A2F 50%, #D9BC85 100%); }
-  .panel-4 { background: linear-gradient(150deg, #3A2417 0%, #7A5A38 55%, #E3D3B3 100%); }
   .portfolio-caption {
     margin-top: 22px;
     font-size: 13px;
@@ -596,6 +623,7 @@
     <p class="eyebrow">The Signature</p>
     <div class="gold-rule"></div>
     <div class="featured-panel">
+      <img src="images/betty-boho-featured.jpg" alt="Client showing long human hair knotless boho braids">
       <p class="featured-panel-text">Human Hair Knotless<br>Boho Braids</p>
     </div>
     <h2>The Style Everyone Asks For</h2>
@@ -613,20 +641,28 @@
     <p class="portfolio-intro">A few favorites from the chair. See the full collection on Instagram.</p>
 
     <div class="portfolio-item">
-      <div class="portfolio-panel panel-1"><span>Small Knotless Braids</span></div>
+      <div class="portfolio-panel"><img src="images/betty-knotless-1.jpg" alt="Small knotless braids from the back, neat parts"><span>Small Knotless Braids</span></div>
       <p class="portfolio-caption">Small Knotless Braids &middot; $380</p>
     </div>
     <div class="portfolio-item">
-      <div class="portfolio-panel panel-2"><span>Boho Box Braids</span></div>
+      <div class="portfolio-panel"><img src="images/betty-boho-1.jpg" alt="Long human hair knotless boho braids with curls"><span>Human Hair Knotless Boho Braids</span></div>
+      <p class="portfolio-caption">Human Hair Knotless Boho Braids &middot; $320</p>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-panel"><img src="images/betty-knotless-2.jpg" alt="Large knotless braids, close view of clean parts"><span>Large Knotless Braids</span></div>
+      <p class="portfolio-caption">Large Knotless Braids &middot; $200</p>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-panel"><img src="images/betty-boho-2.jpg" alt="Burgundy boho braids with curls from the back"><span>Boho Box Braids</span></div>
       <p class="portfolio-caption">Boho Box Braids &middot; $260</p>
     </div>
     <div class="portfolio-item">
-      <div class="portfolio-panel panel-3"><span>Faux Locs</span></div>
-      <p class="portfolio-caption">Faux Locs &middot; $240</p>
+      <div class="portfolio-panel"><img src="images/betty-box-1.jpg" alt="Box braids held up showing triangle parts"><span>Box Braids, Medium</span></div>
+      <p class="portfolio-caption">Box Braids, Medium &middot; $220</p>
     </div>
     <div class="portfolio-item">
-      <div class="portfolio-panel panel-4"><span>Stitch Braids</span></div>
-      <p class="portfolio-caption">Stitch Braids &middot; $150</p>
+      <div class="portfolio-panel"><img src="images/betty-goddess-1.jpg" alt="Long goddess braids with curly ends held up"><span>Goddess Braids</span></div>
+      <p class="portfolio-caption">Goddess Braids</p>
     </div>
   </div>
 </section>

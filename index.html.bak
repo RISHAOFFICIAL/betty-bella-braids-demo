@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Betty Bella Braids | Designer Braids, Human Hair | Detroit &amp; Portage, MI</title>
+<meta name="description" content="Betty Bella Braids is Michigan's home for designer braids and human hair knotless styles. 180K followers on Instagram. Book by phone: (224) 795-3104. Shop in Kalamazoo, serving Detroit and Portage.">
+<meta property="og:title" content="Betty Bella Braids | Designer Braids. Human Hair.">
+<meta property="og:description" content="Premium human hair braids, knotless styles, twists, and locs. Detroit and Portage, MI. Book by phone: (224) 795-3104.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rishaofficial.github.io/betty-bella-braids-demo/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Betty Bella Braids | Designer Braids. Human Hair.">
+<meta name="twitter:description" content="Premium human hair braids, knotless styles, twists, and locs. Detroit and Portage, MI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --espresso: #2E1B12;
+    --espresso-deep: #1E110B;
+    --espresso-soft: #4A2E1F;
+    --ivory: #FBF6F0;
+    --ivory-dark: #F3E9DF;
+    --rose: #C17C7C;
+    --rose-dark: #A96666;
+    --rose-light: #E3B8B8;
+    --ink: #2E1B12;
+    --muted: #8A7264;
+    --white: #FFFFFF;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Archivo', -apple-system, sans-serif;
+    background: var(--ivory);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .display {
+    font-family: 'Oswald', 'Arial Narrow', sans-serif;
+    font-weight: 600;
+    line-height: 1.02;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* ---------- Falling Autumn Leaves ---------- */
+  .falling-leaf {
+    position: fixed;
+    top: -40px;
+    z-index: 90;
+    pointer-events: none;
+    font-size: 20px;
+    opacity: 0.7;
+    animation: leaf-fall linear infinite;
+  }
+
+  @keyframes leaf-fall {
+    0% {
+      transform: translateY(-40px) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.7;
+    }
+    90% {
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateY(110vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .falling-leaf {
+      display: none;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(251, 246, 240, 0.94);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(46, 27, 18, 0.1);
+  }
+
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .logo {
+    font-family: 'Oswald', 'Arial Narrow', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--espresso);
+    line-height: 1;
+  }
+
+  .logo span {
+    color: var(--rose);
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  nav a {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink);
+    transition: color 0.2s;
+  }
+
+  nav a:hover {
+    color: var(--rose-dark);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 13px 26px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+
+  .btn-espresso {
+    background: var(--espresso);
+    color: var(--ivory);
+  }
+
+  .btn-espresso:hover {
+    background: var(--espresso-deep);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(46, 27, 18, 0.25);
+  }
+
+  .btn-rose {
+    background: var(--rose);
+    color: var(--white);
+  }
+
+  .btn-rose:hover {
+    background: var(--rose-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(193, 124, 124, 0.35);
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--espresso);
+    border: 1.5px solid var(--espresso);
+  }
+
+  .btn-outline:hover {
+    background: var(--espresso);
+    color: var(--ivory);
+  }
+
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: var(--espresso);
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    padding: 150px 24px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 56px;
+    align-items: stretch;
+  }
+
+  .hero h1 {
+    font-size: clamp(48px, 7.5vw, 92px);
+    color: var(--espresso);
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: var(--rose);
+  }
+
+  .hero-rule {
+    width: 72px;
+    height: 3px;
+    background: var(--rose);
+    margin: 28px 0;
+  }
+
+  .hero-sub {
+    max-width: 520px;
+    font-size: 19px;
+    line-height: 1.65;
+    color: var(--muted);
+  }
+
+  .hero-actions {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero-locations {
+    margin-top: 36px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(46, 27, 18, 0.12);
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--muted);
+  }
+
+  .hero-locations strong {
+    color: var(--espresso);
+    font-weight: 700;
+  }
+
+  .hero-panel {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    min-height: 460px;
+    background: linear-gradient(165deg, #4A2E1F 0%, #2E1B12 55%, #1E110B 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 28px;
+  }
+
+  .hero-panel::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -25%;
+    width: 85%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(193, 124, 124, 0.45) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .hero-panel::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 55%;
+    background: linear-gradient(to top, rgba(30, 17, 11, 0.75), transparent);
+  }
+
+  .hero-panel-content {
+    position: relative;
+    z-index: 2;
+    color: var(--ivory);
+  }
+
+  .hero-panel-content h3 {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 8px;
+  }
+
+  .hero-panel-content p {
+    font-size: 14px;
+    color: rgba(251, 246, 240, 0.8);
+  }
+
+  .photo-note {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(255, 255, 255, 0.92);
+    color: var(--espresso);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 5px 11px;
+    border-radius: 100px;
+    z-index: 3;
+  }
+
+  /* ---------- Marquee ---------- */
+  .marquee {
+    margin-top: 72px;
+    background: var(--espresso);
+    color: var(--ivory);
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 16px 0;
+  }
+
+  .marquee-track {
+    display: inline-flex;
+    animation: marquee 30s linear infinite;
+  }
+
+  .marquee-track span {
+    font-family: 'Oswald', 'Arial Narrow', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0 26px;
+    display: inline-flex;
+    align-items: center;
+    gap: 26px;
+  }
+
+  .marquee-track span::after {
+    content: '✦';
+    color: var(--rose);
+    font-size: 13px;
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* ---------- Section base ---------- */
+  section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 96px 24px;
+  }
+
+  .section-head {
+    margin-bottom: 48px;
+    max-width: 680px;
+  }
+
+  .section-head h2 {
+    font-size: clamp(36px, 5vw, 56px);
+    color: var(--espresso);
+    margin-bottom: 16px;
+  }
+
+  .section-head p {
+    font-size: 18px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* ---------- Services ---------- */
+  .services {
+    background: var(--white);
+    max-width: none;
+    padding: 96px 0;
+  }
+
+  .services-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .service-cats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 48px;
+  }
+
+  .cat-btn {
+    font-family: 'Oswald', 'Arial Narrow', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 11px 22px;
+    border-radius: 2px;
+    border: 1.5px solid rgba(46, 27, 18, 0.18);
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .cat-btn:hover {
+    border-color: var(--espresso);
+  }
+
+  .cat-btn.active {
+    background: var(--espresso);
+    color: var(--ivory);
+    border-color: var(--espresso);
+  }
+
+  .service-group {
+    display: none;
+  }
+
+  .service-group.active {
+    display: block;
+  }
+
+  .service-group-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--espresso);
+    margin-bottom: 8px;
+  }
+
+  .service-group-sub {
+    font-size: 15px;
+    color: var(--muted);
+    margin-bottom: 32px;
+  }
+
+  .service-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  @media (min-width: 768px) {
+    .service-list {
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+  }
+
+  .service-card {
+    background: var(--ivory);
+    border: 1px solid rgba(46, 27, 18, 0.09);
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(46, 27, 18, 0.04);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(46, 27, 18, 0.09);
+    border-color: rgba(193, 124, 124, 0.45);
+  }
+
+  .service-card-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px;
+  }
+
+  .service-photo {
+    width: 84px;
+    height: 84px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ivory);
+    font-family: 'Oswald', 'Arial Narrow', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .service-photo.g1 { background: linear-gradient(140deg, #4A2E1F 0%, #2E1B12 100%); }
+  .service-photo.g2 { background: linear-gradient(140deg, #C17C7C 0%, #A96666 100%); }
+  .service-photo.g3 { background: linear-gradient(140deg, #8A5A44 0%, #5C3A28 100%); }
+  .service-photo.g4 { background: linear-gradient(140deg, #B98A7A 0%, #96655A 100%); }
+
+  .service-details {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .service-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.25;
+  }
+
+  .service-time {
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .service-card-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 8px;
+  }
+
+  .service-price {
+    font-family: 'Oswald', 'Arial Narrow', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--rose-dark);
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .service-book-btn {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
+    background: var(--espresso);
+    padding: 10px 22px;
+    border-radius: 2px;
+    flex-shrink: 0;
+    line-height: 1;
+    transition: background 0.2s ease;
+  }
+
+  .service-card:hover .service-book-btn {
+    background: var(--rose);
+  }
+
+  .service-cta {
+    margin-top: 48px;
+    text-align: center;
+  }
+
+  .service-cta p {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  /* ---------- Portfolio ---------- */
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  .portfolio-item {
+    aspect-ratio: 3/4;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 22px;
+    transition: transform 0.3s;
+  }
+
+  .portfolio-item:hover {
+    transform: scale(1.015);
+  }
+
+  .portfolio-item:nth-child(1) { background: linear-gradient(160deg, #4A2E1F, #2E1B12); }
+  .portfolio-item:nth-child(2) { background: linear-gradient(160deg, #C17C7C, #A96666); }
+  .portfolio-item:nth-child(3) { background: linear-gradient(160deg, #8A5A44, #5C3A28); }
+  .portfolio-item:nth-child(4) { background: linear-gradient(160deg, #B98A7A, #96655A); }
+  .portfolio-item:nth-child(5) { background: linear-gradient(160deg, #2E1B12, #1E110B); }
+  .portfolio-item:nth-child(6) { background: linear-gradient(160deg, #D9A08C, #C17C7C); }
+
+  .portfolio-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(30, 17, 11, 0.55), transparent);
+  }
+
+  .portfolio-label {
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+  }
+
+  .portfolio-label strong {
+    font-family: 'Oswald', 'Arial Narrow', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    display: block;
+    line-height: 1.2;
+  }
+
+  .portfolio-label span {
+    font-size: 13px;
+    opacity: 0.85;
+  }
+
+  .portfolio-note {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  /* ---------- About ---------- */
+  .about {
+    background: var(--espresso);
+    color: var(--ivory);
+    max-width: none;
+  }
+
+  .about-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .about-visual {
+    aspect-ratio: 4/5;
+    border-radius: 4px;
+    background: linear-gradient(160deg, #4A2E1F 0%, #2E1B12 50%, #1E110B 100%);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 28px;
+  }
+
+  .about-visual::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -30%;
+    width: 90%;
+    height: 90%;
+    background: radial-gradient(circle, rgba(193, 124, 124, 0.4) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .about-visual-text {
+    position: relative;
+    z-index: 2;
+  }
+
+  .about-visual-text .big {
+    font-family: 'Oswald', 'Arial Narrow', sans-serif;
+    font-size: 76px;
+    font-weight: 700;
+    line-height: 0.9;
+    text-transform: uppercase;
+    color: var(--ivory);
+  }
+
+  .about-visual-text p {
+    font-size: 14px;
+    color: rgba(251, 246, 240, 0.7);
+    margin-top: 10px;
+  }
+
+  .about-content h2 {
+    font-size: clamp(36px, 4.5vw, 52px);
+    color: var(--ivory);
+    margin-bottom: 24px;
+  }
+
+  .about-content p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: rgba(251, 246, 240, 0.85);
+    margin-bottom: 20px;
+  }
+
+  .about-content p strong {
+    color: var(--ivory);
+  }
+
+  .about-content .btn {
+    margin-top: 8px;
+  }
+
+  /* ---------- Booking CTA ---------- */
+  .booking-cta {
+    background: var(--rose);
+    color: var(--white);
+    max-width: none;
+    text-align: center;
+  }
+
+  .booking-cta-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .booking-cta h2 {
+    font-size: clamp(40px, 6vw, 64px);
+    color: var(--white);
+    margin-bottom: 20px;
+  }
+
+  .booking-cta p {
+    font-size: 19px;
+    line-height: 1.6;
+    opacity: 0.93;
+    margin-bottom: 32px;
+  }
+
+  .booking-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .booking-cta .btn-light {
+    background: var(--white);
+    color: var(--rose-dark);
+    font-size: 17px;
+    padding: 16px 36px;
+  }
+
+  .booking-cta .btn-light:hover {
+    background: var(--ivory);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  }
+
+  .booking-cta .btn-ghost {
+    background: transparent;
+    color: var(--white);
+    border: 1.5px solid rgba(255, 255, 255, 0.8);
+    font-size: 17px;
+    padding: 16px 36px;
+  }
+
+  .booking-cta .btn-ghost:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-2px);
+  }
+
+  .booking-note {
+    margin-top: 22px;
+    font-size: 14px;
+    opacity: 0.85;
+  }
+
+  /* ---------- Info bar ---------- */
+  .info-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 56px 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .info-item h3 {
+    font-size: 19px;
+    color: var(--espresso);
+    margin-bottom: 8px;
+  }
+
+  .info-item p {
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .info-item a {
+    color: var(--rose-dark);
+    font-weight: 700;
+  }
+
+  .info-item a:hover {
+    text-decoration: underline;
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    background: var(--espresso-deep);
+    color: rgba(251, 246, 240, 0.7);
+    padding: 64px 24px 32px;
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(251, 246, 240, 0.12);
+    margin-bottom: 32px;
+  }
+
+  .footer-brand .logo {
+    color: var(--ivory);
+    font-size: 26px;
+  }
+
+  .footer-brand p {
+    margin-top: 12px;
+    font-size: 15px;
+    max-width: 340px;
+    line-height: 1.6;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 64px;
+    flex-wrap: wrap;
+  }
+
+  .footer-col h4 {
+    font-family: 'Oswald', 'Arial Narrow', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ivory);
+    margin-bottom: 16px;
+  }
+
+  .footer-col a {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: color 0.2s;
+  }
+
+  .footer-col a:hover {
+    color: var(--rose-light);
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 13px;
+  }
+
+  .footer-bottom a {
+    color: var(--rose-light);
+  }
+
+  /* ---------- Mobile ---------- */
+  .mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--espresso);
+    z-index: 200;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+  }
+
+  .mobile-nav.open {
+    display: flex;
+  }
+
+  .mobile-nav a {
+    font-family: 'Oswald', 'Arial Narrow', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ivory);
+  }
+
+  .mobile-nav-close {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    background: none;
+    border: none;
+    color: var(--ivory);
+    font-size: 32px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+    }
+
+    .mobile-menu-btn {
+      display: block;
+    }
+
+    .hero {
+      padding-top: 110px;
+    }
+
+    .hero-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    .hero-panel {
+      min-height: 320px;
+    }
+
+    .about-inner {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .about-visual {
+      aspect-ratio: 16/10;
+    }
+
+    .portfolio-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .info-bar {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .service-cats {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      margin-left: -24px;
+      margin-right: -24px;
+      padding-left: 24px;
+      padding-right: 24px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .service-cats::-webkit-scrollbar {
+      display: none;
+    }
+
+    .cat-btn {
+      flex-shrink: 0;
+    }
+
+    .footer-links {
+      gap: 32px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .portfolio-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .portfolio-item {
+      aspect-ratio: 16/10;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">Betty Bella <span>Braids</span></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#about">About Betty</a>
+      <a href="https://www.instagram.com/betty_bella_braids/" target="_blank" rel="noopener">Instagram</a>
+      <a href="tel:+12247953104" class="btn btn-espresso">Book Now</a>
+    </nav>
+    <button class="mobile-menu-btn" onclick="toggleMobileNav()" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" onclick="toggleMobileNav()" aria-label="Close menu">✕</button>
+  <a href="#services" onclick="toggleMobileNav()">Services</a>
+  <a href="#work" onclick="toggleMobileNav()">Work</a>
+  <a href="#about" onclick="toggleMobileNav()">About Betty</a>
+  <a href="https://www.instagram.com/betty_bella_braids/" target="_blank" rel="noopener">Instagram</a>
+  <a href="tel:+12247953104" style="color: var(--rose-light);">Call to Book →</a>
+</div>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-grid">
+    <div>
+      <h1>Designer braids. Human hair. <em>Made to turn heads.</em></h1>
+      <div class="hero-rule"></div>
+      <p class="hero-sub">Premium knotless braids, boho styles, twists, and locs, built with real human hair and finished with a designer touch. This is hair that moves, shines, and gets noticed everywhere you go.</p>
+      <div class="hero-actions">
+        <a href="tel:+12247953104" class="btn btn-rose">Call (224) 795-3104 to Book</a>
+        <a href="#services" class="btn btn-outline">See Services &amp; Prices</a>
+      </div>
+      <p class="hero-locations"><strong>Detroit, MI and Portage, MI.</strong><br>Shop: 1601 Portage St, Kalamazoo, MI 49001<br>Follow along: <a href="https://www.instagram.com/betty_bella_braids/" target="_blank" rel="noopener" style="color: var(--rose-dark); font-weight: 700;">@betty_bella_braids</a></p>
+    </div>
+    <div class="hero-panel">
+      <span class="photo-note">Your photo here</span>
+      <div class="hero-panel-content">
+        <h3>Human Hair Knotless Boho Braids</h3>
+        <p>The signature Betty Bella look. 6 hrs · $320</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Marquee -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Human Hair Knotless</span>
+    <span>Boho Braids</span>
+    <span>Passion Twists</span>
+    <span>Faux Locs</span>
+    <span>Stitch Braids</span>
+    <span>Loc Retwist</span>
+    <span>Human Hair Knotless</span>
+    <span>Boho Braids</span>
+    <span>Passion Twists</span>
+    <span>Faux Locs</span>
+    <span>Stitch Braids</span>
+    <span>Loc Retwist</span>
+  </div>
+</div>
+
+<!-- Services -->
+<section class="services" id="services">
+  <div class="services-inner">
+    <div class="section-head">
+      <h2>Services &amp; Prices</h2>
+      <p>Every style, every price, right here. Premium human hair work, priced honestly. Call to book your chair.</p>
+    </div>
+
+    <div class="service-cats">
+      <button class="cat-btn active" onclick="showCategory('knotless', this)">Knotless</button>
+      <button class="cat-btn" onclick="showCategory('boho', this)">Boho &amp; Human Hair</button>
+      <button class="cat-btn" onclick="showCategory('twists', this)">Twists &amp; Locs</button>
+      <button class="cat-btn" onclick="showCategory('braids', this)">Braids &amp; Ponytails</button>
+    </div>
+
+    <!-- Knotless -->
+    <div class="service-group active" id="cat-knotless">
+      <h3 class="service-group-title">Knotless</h3>
+      <p class="service-group-sub">Lightweight, pain-free, and they lay flat from day one. The foundation of the Betty Bella name.</p>
+      <ul class="service-list">
+        <li class="service-card"><a class="service-card-link" href="tel:+12247953104"><span class="service-photo g1" aria-hidden="true">L</span><span class="service-details"><span class="service-name">Large Knotless Braids</span><span class="service-time">4 hrs</span><span class="service-card-foot"><span class="service-price">$200</span><span class="service-book-btn">Book</span></span></span></a></li>
+        <li class="service-card"><a class="service-card-link" href="tel:+12247953104"><span class="service-photo g2" aria-hidden="true">S</span><span class="service-details"><span class="service-name">Small Knotless Braids</span><span class="service-time">7 hrs</span><span class="service-card-foot"><span class="service-price">$380</span><span class="service-book-btn">Book</span></span></span></a></li>
+      </ul>
+    </div>
+
+    <!-- Boho & Human Hair -->
+    <div class="service-group" id="cat-boho">
+      <h3 class="service-group-title">Boho &amp; Human Hair</h3>
+      <p class="service-group-sub">Real human hair, soft boho curls, and movement that synthetic hair cannot match. The designer difference.</p>
+      <ul class="service-list">
+        <li class="service-card"><a class="service-card-link" href="tel:+12247953104"><span class="service-photo g2" aria-hidden="true">H</span><span class="service-details"><span class="service-name">Human Hair Knotless Braids (Medium)</span><span class="service-time">5 hrs</span><span class="service-card-foot"><span class="service-price">$280</span><span class="service-book-btn">Book</span></span></span></a></li>
+        <li class="service-card"><a class="service-card-link" href="tel:+12247953104"><span class="service-photo g1" aria-hidden="true">B</span><span class="service-details"><span class="service-name">Human Hair Knotless Boho Braids</span><span class="service-time">6 hrs</span><span class="service-card-foot"><span class="service-price">$320</span><span class="service-book-btn">Book</span></span></span></a></li>
+        <li class="service-card"><a class="service-card-link" href="tel:+12247953104"><span class="service-photo g3" aria-hidden="true">B</span><span class="service-details"><span class="service-name">Boho Box Braids</span><span class="service-time">6 hrs</span><span class="service-card-foot"><span class="service-price">$260</span><span class="service-book-btn">Book</span></span></span></a></li>
+      </ul>
+    </div>
+
+    <!-- Twists & Locs -->
+    <div class="service-group" id="cat-twists">
+      <h3 class="service-group-title">Twists &amp; Locs</h3>
+      <p class="service-group-sub">Soft twists and loc care, done with patience and respect for your natural hair.</p>
+      <ul class="service-list">
+        <li class="service-card"><a class="service-card-link" href="tel:+12247953104"><span class="service-photo g3" aria-hidden="true">K</span><span class="service-details"><span class="service-name">Knotless Twist</span><span class="service-time">4 hrs</span><span class="service-card-foot"><span class="service-price">$190</span><span class="service-book-btn">Book</span></span></span></a></li>
+        <li class="service-card"><a class="service-card-link" href="tel:+12247953104"><span class="service-photo g4" aria-hidden="true">P</span><span class="service-details"><span class="service-name">Passion Twists</span><span class="service-time">4 hrs</span><span class="service-card-foot"><span class="service-price">$180</span><span class="service-book-btn">Book</span></span></span></a></li>
+        <li class="service-card"><a class="service-card-link" href="tel:+12247953104"><span class="service-photo g1" aria-hidden="true">F</span><span class="service-details"><span class="service-name">Faux Locs</span><span class="service-time">5 hrs</span><span class="service-card-foot"><span class="service-price">$240</span><span class="service-book-btn">Book</span></span></span></a></li>
+        <li class="service-card"><a class="service-card-link" href="tel:+12247953104"><span class="service-photo g2" aria-hidden="true">L</span><span class="service-details"><span class="service-name">Loc Retwist &amp; Style</span><span class="service-time">2.5 hrs</span><span class="service-card-foot"><span class="service-price">$110</span><span class="service-book-btn">Book</span></span></span></a></li>
+      </ul>
+    </div>
+
+    <!-- Braids & Ponytails -->
+    <div class="service-group" id="cat-braids">
+      <h3 class="service-group-title">Braids &amp; Ponytails</h3>
+      <p class="service-group-sub">Classic box braids, precision stitch work, and sleek ponytails with a designer finish.</p>
+      <ul class="service-list">
+        <li class="service-card"><a class="service-card-link" href="tel:+12247953104"><span class="service-photo g4" aria-hidden="true">B</span><span class="service-details"><span class="service-name">Box Braids (Medium)</span><span class="service-time">5 hrs</span><span class="service-card-foot"><span class="service-price">$220</span><span class="service-book-btn">Book</span></span></span></a></li>
+        <li class="service-card"><a class="service-card-link" href="tel:+12247953104"><span class="service-photo g1" aria-hidden="true">S</span><span class="service-details"><span class="service-name">Stitch Braids</span><span class="service-time">3 hrs</span><span class="service-card-foot"><span class="service-price">$150</span><span class="service-book-btn">Book</span></span></span></a></li>
+        <li class="service-card"><a class="service-card-link" href="tel:+12247953104"><span class="service-photo g2" aria-hidden="true">F</span><span class="service-details"><span class="service-name">Feed-In Ponytail</span><span class="service-time">3 hrs</span><span class="service-card-foot"><span class="service-price">$140</span><span class="service-book-btn">Book</span></span></span></a></li>
+      </ul>
+    </div>
+
+    <div class="service-cta">
+      <p>Do not see the style you want? Call Betty and describe your dream look.</p>
+      <a href="tel:+12247953104" class="btn btn-espresso">Call (224) 795-3104 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section id="work">
+  <div class="section-head">
+    <h2>The Work Speaks</h2>
+    <p>Every head that leaves this chair is a walking statement. Here is a taste of what Betty does.</p>
+  </div>
+
+  <div class="portfolio-grid">
+    <div class="portfolio-item">
+      <span class="photo-note">Your photo here</span>
+      <div class="portfolio-label"><strong>Human Hair Knotless Boho</strong><span>Signature style · $320</span></div>
+    </div>
+    <div class="portfolio-item">
+      <span class="photo-note">Your photo here</span>
+      <div class="portfolio-label"><strong>Small Knotless Braids</strong><span>Waist length · $380</span></div>
+    </div>
+    <div class="portfolio-item">
+      <span class="photo-note">Your photo here</span>
+      <div class="portfolio-label"><strong>Faux Locs</strong><span>Natural finish · $240</span></div>
+    </div>
+    <div class="portfolio-item">
+      <span class="photo-note">Your photo here</span>
+      <div class="portfolio-label"><strong>Passion Twists</strong><span>Soft and full · $180</span></div>
+    </div>
+    <div class="portfolio-item">
+      <span class="photo-note">Your photo here</span>
+      <div class="portfolio-label"><strong>Stitch Braids</strong><span>Clean parts · $150</span></div>
+    </div>
+    <div class="portfolio-item">
+      <span class="photo-note">Your photo here</span>
+      <div class="portfolio-label"><strong>Feed-In Ponytail</strong><span>Sleek and high · $140</span></div>
+    </div>
+  </div>
+
+  <p class="portfolio-note">Placeholder cards for now. The final site will feature Betty's real work photos.</p>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-visual">
+      <span class="photo-note">Your photo here</span>
+      <div class="about-visual-text">
+        <div class="big">Betty</div>
+        <p>Detroit &amp; Portage, Michigan</p>
+      </div>
+    </div>
+    <div class="about-content">
+      <h2>The hands behind the name.</h2>
+      <p>Betty built Betty Bella Braids on one belief: braids should feel as good as they look. No pulling, no rushing, no shortcuts. Just clean parts, gentle hands, and styles that last.</p>
+      <p>As a <strong>human hair specialist</strong>, Betty works with real human hair to create designer braids with movement and shine that synthetic hair cannot match. Her boho knotless styles have made her one of Michigan's most watched braiders, with <strong>180,000 followers</strong> on Instagram following every style she drops.</p>
+      <p>Betty welcomes clients at her physical shop in Kalamazoo, serving Detroit and Portage, and shares tutorials and behind the scenes looks on her YouTube channel. When you sit in her chair, you get the same care she shows on camera, every single time.</p>
+      <a href="https://www.instagram.com/betty_bella_braids/" class="btn btn-rose" target="_blank" rel="noopener">Follow @betty_bella_braids →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Booking CTA -->
+<section class="booking-cta">
+  <div class="booking-cta-inner">
+    <h2>Your next set is one call away.</h2>
+    <p>Pick your style, call the shop, and lock in your chair. No waiting on a DM reply, no back and forth. Just show up and get your hair done.</p>
+    <div class="booking-cta-actions">
+      <a href="tel:+12247953104" class="btn btn-light">Call (224) 795-3104</a>
+      <a href="https://www.instagram.com/betty_bella_braids/" class="btn btn-ghost" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <p class="booking-note">Phone booking · Shop: 1601 Portage St, Kalamazoo, MI 49001</p>
+  </div>
+</section>
+
+<!-- Info bar -->
+<div class="info-bar">
+  <div class="info-item">
+    <h3>Location</h3>
+    <p>1601 Portage St<br>Kalamazoo, MI 49001<br>Serving Detroit and Portage, MI.</p>
+  </div>
+  <div class="info-item">
+    <h3>Follow Betty</h3>
+    <p>See the latest styles, openings, and tutorials on Instagram and YouTube.<br><a href="https://www.instagram.com/betty_bella_braids/" target="_blank" rel="noopener">@betty_bella_braids →</a></p>
+  </div>
+  <div class="info-item">
+    <h3>Questions?</h3>
+    <p>Call the shop at <a href="tel:+12247953104">(224) 795-3104</a> for custom styles, consultations, or anything not listed here.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo">Betty Bella <span>Braids</span></a>
+        <p>Designer braids and human hair styles from Michigan's most watched braider. Made to turn heads.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="#services">Knotless</a>
+          <a href="#services">Boho &amp; Human Hair</a>
+          <a href="#services">Twists &amp; Locs</a>
+          <a href="#services">Braids &amp; Ponytails</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="https://www.instagram.com/betty_bella_braids/" target="_blank" rel="noopener">Instagram</a>
+          <a href="tel:+12247953104">(224) 795-3104</a>
+          <a href="https://maps.google.com/?q=1601+Portage+St,+Kalamazoo,+MI+49001" target="_blank" rel="noopener">1601 Portage St, Kalamazoo, MI 49001</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Betty Bella Braids · Detroit, MI and Portage, MI</span>
+      <span>Demo site built by <a href="https://rishaofficial.github.io/lexis-sapphire-studio/" target="_blank" rel="noopener">Lexis Sapphire Studio</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function showCategory(catId, btn) {
+    // Hide all groups
+    document.querySelectorAll('.service-group').forEach(g => g.classList.remove('active'));
+    // Remove active from all buttons
+    document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+    // Show selected group
+    document.getElementById('cat-' + catId).classList.add('active');
+    // Mark button active
+    btn.classList.add('active');
+  }
+
+  function toggleMobileNav() {
+    document.getElementById('mobileNav').classList.toggle('open');
+  }
+
+  // Falling autumn leaves
+  (function() {
+    const leaves = ['\uD83C\uDF42', '\uD83C\uDF41', '\uD83C\uDF43'];
+    const isMobile = window.innerWidth < 768;
+    const count = isMobile ? 8 : 14;
+
+    for (let i = 0; i < count; i++) {
+      const leaf = document.createElement('span');
+      leaf.className = 'falling-leaf';
+      leaf.textContent = leaves[Math.floor(Math.random() * leaves.length)];
+      leaf.style.left = Math.random() * 100 + 'vw';
+      leaf.style.fontSize = (16 + Math.random() * 12) + 'px';
+      leaf.style.animationDuration = (isMobile ? 12 : 8) + (Math.random() * 8) + 's';
+      leaf.style.animationDelay = (-Math.random() * 12) + 's';
+      document.body.appendChild(leaf);
+    }
+  })();
+</script>
+
+</body>
+</html>
